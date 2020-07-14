@@ -1,0 +1,44 @@
+
+@font-face {
+  font-family: "DancingScript";
+  src: url("../fonts/static/DancingScript-Regular.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DancingScript-Bold";
+  src: url("../fonts/static/DancingScript-Bold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LeckerliOne";
+  src: url("../fonts/LeckerliOne-Regular.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-ds-normal{
+    font-family: "DancingScript";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-ds-bold{
+  font-family: "DancingScript-Bold";
+  font-weight: 700;
+  font-style: bold;
+}
+
+.font-leckerli{
+  font-family: "LeckerliOne";
+  font-weight: 700;
+  font-style: bold;
+}
+
+h1,h2,h3{
+  font-family: "DancingScript-Bold";
+  font-weight: 700;
+  font-style: bold;
+}

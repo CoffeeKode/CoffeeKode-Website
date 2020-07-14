@@ -1,0 +1,264 @@
+.hv-100 {
+    height: 100vh !important;
+}
+
+.bg-yellow-light {
+    background-color: #e8f5e9;
+}
+
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 200px;
+}
+
+
+/*Background style*/
+
+.bg {
+    /* The image used */
+    background-image: url("../img/bg-main.jpg");
+    /* Full height */
+    height: 100vh;
+    width: 100%;
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg-login {
+    /* The image used */
+    background-image: url("../img/bg-main.jpg");
+    /* Center and scale the image nicely */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-blue-grey {
+    background-color: #f7f8f8;
+}
+
+
+/*Button style*/
+
+.btn-rounded {
+    border-radius: 10em;
+}
+
+.btn-outline-default {
+    color: #2bbbad !important;
+    background-color: transparent !important;
+    border: 2px solid #2bbbad !important;
+}
+
+
+/*Effect press button*/
+
+.waves-effect {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn-outline-amber-1 {
+    color: #ffa000 !important;
+    background-color: transparent !important;
+    border: 1px solid #ffa000 !important;
+}
+
+.card {
+    margin: 10px 10px;
+}
+
+
+/* Flip Cards CSS */
+
+.card-container {
+    display: grid;
+    perspective: 700px;
+}
+
+.card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+
+.card-flip div {
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.front {
+    grid-area: frontAndBack;
+}
+
+.back {
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+    transform: rotateY(180deg);
+}
+
+.card #cardFilter {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+/*Button back to top*/
+
+.back-top-btn {
+    position: fixed;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    background: #ffa000;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.back-top-btn:hover {
+    color: black;
+}
+
+.errors li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+.errors ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.colorPicker {
+    margin-top: 1em;
+    font-size: 0.875em;
+    text-align: center;
+    display: inline-table;
+    width: 100%;
+    max-width: 40em;
+    background: #fff;
+    padding: 2px;
+    border-radius: 0.35em;
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.15);
+}
+
+.colorPicker label {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: table-cell;
+    cursor: pointer;
+    vertical-align: middle;
+    padding: 0.5em 1em;
+    text-transform: capitalize;
+    letter-spacing: -0.5em;
+    color: transparent;
+    opacity: 0.35;
+    width: 1%;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.1)), to(rgba(0, 0, 0, 0.1)));
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+}
+
+.colorPicker label.red {
+    background-color: #ff3e05;
+    -webkit-tap-highlight-color: #ff3e05;
+}
+
+.colorPicker label.orange {
+    background-color: #ff8d05;
+    -webkit-tap-highlight-color: #ff8d05;
+}
+
+.colorPicker label.yellow {
+    background-color: #ecca05;
+    -webkit-tap-highlight-color: #ecca05;
+}
+
+.colorPicker label.green {
+    background-color: #40af04;
+    -webkit-tap-highlight-color: #40af04;
+}
+
+.colorPicker label.blue {
+    background-color: #057fff;
+    -webkit-tap-highlight-color: #057fff;
+}
+
+.colorPicker label.indigo {
+    background-color: #7500ca;
+    -webkit-tap-highlight-color: #7500ca;
+}
+
+.colorPicker label.violet {
+    background-color: #cc6fcc;
+    -webkit-tap-highlight-color: #cc6fcc;
+}
+
+.colorPicker label:first-of-type {
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+.colorPicker label:last-of-type {
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+.colorPicker label:hover {
+    opacity: 1;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+.colorPicker input {
+    display: none;
+}
+
+.colorPicker input:checked+label {
+    width: 90%;
+    opacity: 1;
+    color: #fff;
+    letter-spacing: normal;
+}
+
+.card.card-cascade.wider {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.card.card-cascade.wider.reverse .card-body.card-body-cascade {
+    z-index: 3;
+    margin-top: -0.4rem;
+    border-radius: .25rem;
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.card.card-cascade.wider .card-body.card-body-cascade {
+    z-index: 1;
+    margin-right: 4%;
+    margin-left: 4%;
+    background: #fff;
+    border-radius: 0 0 .25rem .25rem;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
