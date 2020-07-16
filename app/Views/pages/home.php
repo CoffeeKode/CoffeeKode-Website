@@ -10,10 +10,6 @@
 
 <?= $this->section('page_content') ?>
 
-
-
-
-
 <!-- Full Page Intro -->
 <div id="home" class="view bg">
 	<!-- Mask & flexbox options-->
